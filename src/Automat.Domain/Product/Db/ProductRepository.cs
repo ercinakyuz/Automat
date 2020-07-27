@@ -33,14 +33,30 @@ namespace Automat.Domain.Product.Db
                 {
                     Name = "Filter Coffee",
                     Sku = "HDFC1",
-                    AvailableQuantity = 20,
-                    Price = 10,
+                    AvailableQuantity = 5,
+                    Price = 15,
                     Category = new CategoryDomainDto
                     {
                         Name = "Drink",
                         SubCategory = new CategoryDomainDto
                         {
                             Name = "Hot Drink"
+                        }
+                    }
+
+                }),
+                Models.Product.Load(new ProductDomainDto
+                {
+                    Name = "Lemonade",
+                    Sku = "CDL1",
+                    AvailableQuantity = 5,
+                    Price = 5,
+                    Category = new CategoryDomainDto
+                    {
+                        Name = "Drink",
+                        SubCategory = new CategoryDomainDto
+                        {
+                            Name = "Cold Drink"
                         }
                     }
 
@@ -62,8 +78,29 @@ namespace Automat.Domain.Product.Db
                             }
                         }
                     }
-
-                })
+                }),
+                Models.Product.Load(new ProductDomainDto
+                {
+                    Name = "Biscuit",
+                    Sku = "FB1",
+                    AvailableQuantity = 10,
+                    Price = 3,
+                    Category = new CategoryDomainDto
+                    {
+                        Name = "Food"
+                    }
+                }),
+                Models.Product.Load(new ProductDomainDto
+                {
+                    Name = "Chocolate",
+                    Sku = "FC1",
+                    AvailableQuantity = 10,
+                    Price = 6,
+                    Category = new CategoryDomainDto
+                    {
+                        Name = "Food"
+                    }
+                }),
             };
 
             InsertManyAsync(products).Wait();

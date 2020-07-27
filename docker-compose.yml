@@ -1,15 +1,22 @@
-version: '2'
+version: '2.4'
 
 services:
    mongodb_img:
       image: mongo:latest
-      container_name: "mongodb"
+      container_name: "automat-db"
       ports:
          - 27017:27017
+      networks:
+         - automat-network
    automat-api_img:
       image: automat-api:latest
       container_name: "automat-api"
       depends_on:
          - "mongodb_img"
       ports:
-         - 54654:80         
+         - 54654:80
+      networks:
+         - automat-network
+networks:
+   automat-network:
+     driver: bridge    
