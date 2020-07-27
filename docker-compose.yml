@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+   mongodb_img:
+      image: mongo:latest
+      container_name: "mongodb"
+      ports:
+         - 27017:27017
+   automat-api_img:
+      image: automat-api:latest
+      container_name: "automat-api"
+      depends_on:
+         - "mongodb_img"
+      ports:
+         - 54654:80         
