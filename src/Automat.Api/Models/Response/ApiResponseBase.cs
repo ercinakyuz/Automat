@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Automat.Infrastructure.ExceptionHandling.Contracts;
+using Automat.Infrastructure.Common.Contracts;
 
 namespace Automat.Api.Models.Response
 {

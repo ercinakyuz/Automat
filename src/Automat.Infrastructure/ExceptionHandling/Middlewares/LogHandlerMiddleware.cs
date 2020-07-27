@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Security.Authentication;
 using System.Threading.Tasks;
+using Automat.Infrastructure.Common.Contracts;
 using Automat.Infrastructure.ExceptionHandling.Contracts;
 using Automat.Infrastructure.ExceptionHandling.Exceptions;
 using Microsoft.AspNetCore.Http;

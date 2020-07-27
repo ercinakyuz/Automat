@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 
-namespace Automat.Infrastructure.ExceptionHandling.Extensions
+namespace Automat.Infrastructure.Extensions
 {
     public static class ApplicationBuilderExtensions
     {

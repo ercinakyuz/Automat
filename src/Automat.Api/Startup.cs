@@ -1,10 +1,11 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
 using AutoMapper;
+using Automat.Api.Profiles;
 using Automat.Application;
 using Automat.Application.CommandHandlers.Common;
-using Automat.Infrastructure.ExceptionHandling.Extensions;
 using Automat.Infrastructure.ExceptionHandling.Middlewares;
+using Automat.Infrastructure.Extensions;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +34,7 @@ namespace Automat.Api
             services.AddSwaggerGen();
             services.AddAutoMapper(cfg =>
             {
+                cfg.AddProfile<ApiMappingProfile>();
                 cfg.AddProfile<ApplicationMappingProfile>();
             });
             services.AddMediatR(Assembly.Load("Automat.Application"));

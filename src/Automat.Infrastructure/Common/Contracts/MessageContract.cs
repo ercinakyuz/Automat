@@ -1,4 +1,6 @@
-﻿namespace Automat.Infrastructure.ExceptionHandling.Contracts
+﻿using Automat.Infrastructure.ExceptionHandling.Contracts;
+
+namespace Automat.Infrastructure.Common.Contracts
 {
     public class MessageContract
     {

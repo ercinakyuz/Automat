@@ -6,7 +6,6 @@ namespace Automat.Infrastructure.Common.Contracts
     public abstract class ApiResponseBase<TResult>
     {
         public TResult Result { get; set; }
-
         public string Instance { get; set; }
         public IEnumerable<MessageContract> Messages { get; set; }
     }

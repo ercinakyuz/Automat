@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace Automat.Infrastructure.ExceptionHandling.Extensions
+namespace Automat.Infrastructure.Extensions
 {
     public static class HttpResponseExtensions
     {

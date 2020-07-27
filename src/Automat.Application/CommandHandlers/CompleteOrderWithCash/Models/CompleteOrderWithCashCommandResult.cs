@@ -1,6 +1,8 @@
-﻿namespace Automat.Application.CommandHandlers.CompleteOrderWithCash.Models
+﻿using Automat.Infrastructure.Common.Contracts;
+
+namespace Automat.Application.CommandHandlers.CompleteOrderWithCash.Models
 {
-    public class CompleteOrderWithCashCommandResult
+    public class CompleteOrderWithCashCommandResult: CommandResultBase
     {
         public OrderWithCashContract Order { get; set; }
     }

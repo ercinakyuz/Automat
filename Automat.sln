@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automat.Application", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automat.Infrastructure", "src\Automat.Infrastructure\Automat.Infrastructure.csproj", "{0093B31C-A8C4-4442-BC20-06C877FF49AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automat.Api", "src\Automat.Api\Automat.Api.csproj", "{794F3384-C002-4704-9782-C6A8BF868307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automat.Api", "src\Automat.Api\Automat.Api.csproj", "{794F3384-C002-4704-9782-C6A8BF868307}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
