@@ -3,5 +3,5 @@
 **Build docker file**
 `docker build -t automat-api .`
 
-**Compose up your api with mongo db**
+**Compose up api with mongo db**
 `docker compose-up`
